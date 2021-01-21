@@ -1,0 +1,42 @@
+Metadata-Version: 1.2
+Name: xtrmth
+Version: 1.4.1
+Summary: assorted math functions, to provide all of your math needs.
+Home-page: UNKNOWN
+Author: William Nelson
+License: MIT
+Description: | **XTRMTH**
+        |
+        | All your math one single library. No more need to fill dependencies.
+        | **Just. Math.**
+        | 
+        | The days of an import for every function and variable are finally over.
+        | **Two imports.**
+        | 
+        | Beyond the limits of `math` in some spots, in version 1.2.
+        | 
+        | 
+        | {{documentation to be added in version 2.0.0, along with the inclusion of xm variables (xmv.py)}}
+        | 
+        | See you on the other side.
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: GPU
+Classifier: Environment :: MacOS X
+Classifier: Environment :: No Input/Output (Daemon)
+Classifier: Environment :: OpenStack
+Classifier: Environment :: Other Environment
+Classifier: Environment :: Plugins
+Classifier: Environment :: Web Environment
+Classifier: Environment :: X11 Applications
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Software Development
+Requires-Python: >=3.0
