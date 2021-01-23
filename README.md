@@ -1,14 +1,16 @@
-| **XTRMTH**
-|
-| All your math one single library. No more need to fill dependencies.
-| **Just. Math.**
-| 
-| The days of an import for every function and variable are finally over.
-| **Two imports.**
-| 
-| Beyond the limits of `math` in some spots, in version 1.2.
-| 
-| 
-| {{documentation to be added in version 2.0.0, along with the inclusion of xm variables (xmv.py)}}
-| 
-| See you on the other side.
+# XTRMTH
+
+All your math.
+#### **One Library.**
+All you functions.
+#### **One Import.**
+
+## The days of endlessly searching through documentation are over.
+XTRMTH uses easy-to-understand syntax, and won't force memorization of every edge-case. 
+
+## No more strange, inadequate errors.
+All edge-cases* have a detailed, concice, error message. More broad errors will use formatted strings to show exactly where and how you messed up.
+
+{Documentation to be added in version 2.0.0, along with xtrmth variables (xmv.py).}
+
+*\*personally found or reported*
