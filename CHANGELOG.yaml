@@ -49,3 +49,7 @@
  - Added CHANGELOG.yaml.
 1.4.1:
  - Typos in CHANGELOG.yaml.
+1.5.0:
+ - Added .gitignore file to prevent PyPI readme (read as reStructuredText) being read in github (read as Markdown)
+ - Added rt() function to xm.
+ - Added return type to xm.sqrt() function.

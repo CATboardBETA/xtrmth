@@ -9,7 +9,7 @@ with open('README.md', 'r', encoding='utf-8') as fh:
 setup(
     name='xtrmth',
     packages=find_packages(include=['xtrmth']),      
-    version='1.4.1',
+    version='1.5.0',
     description='assorted math functions, to provide all of your math needs.',
     long_description=long_description,
     author='William Nelson',

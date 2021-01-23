@@ -65,7 +65,7 @@ with opperand \'decimal\' as \'False\'.')
         print(value*value)
     return _total_round(value*value, precision, decimal=False)
 
-def sqrt(value: _meganum, precision: int = 10, decimal: bool = False, _print_unround: bool = False):
+def sqrt(value: _meganum, precision: int = 10, decimal: bool = False, _print_unround: bool = False) -> _num:
     if decimal is True:
         x = dc.Decimal(value)
         y = dc.Decimal(1)
@@ -116,7 +116,7 @@ def xpn(base: _meganum, exponent: _meganum, decimal: bool = False, precision: in
     '''Raises 'base' to the power of 'exponent'.'''
     
     if not isinstance(base, dc.Decimal) and decimal is True:
-        raise TypeError(f'Cannot cast \'{type(base).__name__}\' onto \'xm.xpn(base)\' with opperand \'decimal\' as \'True\'')
+        raise TypeError(f'Cannot cast \'{type(base).__name__()}\' onto \'xm.xpn(base)\' with opperand \'decimal\' as \'True\'')
     elif isinstance(base, dc.Decimal) and decimal is False:
         raise TypeError('Cannot cast \'decimal.Decimal\' onto \'xm.xpn(base)\' with opperand \'decimal\' as \'False\'')
         
@@ -133,3 +133,19 @@ def xpn(base: _meganum, exponent: _meganum, decimal: bool = False, precision: in
     else:
         # will update with my own algorithim in a later update
         return _total_round(base**exponent, precision=precision, decimal=decimal)
+
+def rt(base: _meganum, root: _meganum, precision: int = 10, decimal: bool = False, _print_debug: bool = False) -> _num:
+    '''Takes the 'root' root of 'base' '''
+
+    if isinstance(base, dc.Decimal) and decimal is False:
+        raise TypeError('Cannot cast \'decimal.Decimal\' onto \'xm.rd(base)\' with opperand \'decimal\' as \'False\'')
+    elif not isinstance(base, dc.Decimal) and decimal is True:
+        raise TypeError(f'Cannot cast \'{type(base).__name__}\' onto \'xm.rd(base)\' with opperand \'decimal\' as \'False\'')
+    elif isinstance(root, dc.Decimal) and decimal is False:
+        raise TypeError('Cannot cast \'decimal.Decimal\' onto \'xm.rd(root)\' with opperand \'decimal\' as \'False\'')
+    elif not isinstance(root, dc.Decimal) and decimal is True:
+        raise TypeError(f'Cannot cast \'{type(root).__name__}\' onto \'xm.rd(root)\' with opperand \'decimal\' as \'True\'')
+    
+    if decimal is True:
+        return xpn(base = base, exponent = (dc.Decimal(1) / root), decimal = True, precision = precision, _print_debug = _print_debug)
+    return xpn(base = base, exponent = (1 / root), decimal = False, precision = precision, _print_debug = _print_debug)
