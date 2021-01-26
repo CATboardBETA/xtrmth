@@ -53,3 +53,13 @@
  - Added .gitignore file to prevent PyPI readme (read as reStructuredText) being read in github (read as Markdown)
  - Added rt() function to xm.
  - Added return type to xm.sqrt() function.
+1.6.0:
+ - Enhanced file and function docstring clarity, including adding a return type
+ - Changed 'import ... as ...' to 'from ... import ...' for better readability
+ - Reworked square root function to use x**(1/2) instead of the babylonian algorithm
+ - Reworked cube_root() function to not prioritize int inputs over anything else
+ - Changed return type on square() from Union[int, float] to Union[int, float, decimal.Decimal]
+ - Removed decimal param from all functions, as suggested by StackExchange user Ted Brownlow
+ - Removed Error handeling for the removed decimal param from all functions
+ - Renamed functions for easier reading, as suggested by StackExchange user Ted Brownlow
+ - Added error handling for having a negative precision value (this was originally done in version 1.0.1, but this only affected summation)

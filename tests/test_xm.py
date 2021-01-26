@@ -9,7 +9,7 @@ def test_summation():
 
 def test_sq():
     '''test xm.sq function'''
-    assert xm.sq(dc.Decimal(12.6), decimal=True, _print_unround=True)
+    assert xm.sq(dc.Decimal(12.6))
 
 def test_sqrt():
     assert xm.sqrt(dc.Decimal(158.76), decimal=True, _print_unround=True)
